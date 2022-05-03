@@ -104,7 +104,7 @@ CreateThread(function()
     else
         local bankPoly = {}
         for k, v in pairs(Config.BankLocations) do
-            bankPoly[#bankPoly+1] = BoxZone:Create(vector3(v.x, v.y, v.z), 1.5, 1.5, {
+            bankPoly[#bankPoly+1] = BoxZone:Create(vector3(v.x, v.y, v.z), 5, 5, {
                 heading = -20,
                 name="bank"..k,
                 debugPoly = false,
